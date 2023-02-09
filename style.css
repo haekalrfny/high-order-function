@@ -26,7 +26,7 @@ main {
 .script {
     display: flex;
     width: 50%;
-    height: 30vh;
+    height: 40vh;
    background: linear-gradient(100deg, #252829, #414345);
    color: white;
     border-radius: 25px;
