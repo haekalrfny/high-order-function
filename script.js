@@ -52,7 +52,12 @@ const totalFalse = jumlahIsForceUserFalse.reduce((a, b) => a + b)
 console.log(totalFalse);
 
 personel.forEach((p) => {
-        document.write(`Id : ${p.id} <br> Name : ${p.name} <br> Piloting score : ${p.pilotingScore} <br> Shooting score : ${p.shootingScore} <br> Is force user : ${p.isForceUser} <br><hr>`)  
+    document.write(`Id : ${p.id} <br> Name : ${p.name} <br> Piloting score : ${p.pilotingScore} <br> Shooting score : ${p.shootingScore} <br> Is force user : ${p.isForceUser} <br>`);
+    if (p.isForceUser === true) {
+        const totalScore = p.pilotingScore + p.shootingScore
+        document.write(`total : ${totalScore}`)
+    } 
+    document.write(`<hr>`)
 })
 
 document.write(`total (true) : ` + totalTrue)
