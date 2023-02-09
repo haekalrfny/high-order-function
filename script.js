@@ -60,8 +60,3 @@ document.write(`<br>`)
 document.write(`total (false) :` + totalFalse)
 document.write(`<br>`)
 document.write(`total (true + false) : ` + (totalTrue + totalFalse))
-
-
-
-
-
